@@ -9,17 +9,52 @@
 #import "chocolateViewController.h"
 
 @interface chocolateViewController ()
-
+@property (weak, nonatomic) IBOutlet UILabel *greetingMessage;
+@property (nonatomic) int chocolates;
 @end
+NSString * const kChocolates = @"kChocolates";
 
 @implementation chocolateViewController
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (IBAction)clickChocaltes:(UIButton *)sender {
+    self.chocolates ++;
 }
 
+- (void) setChocolates:(int)chocolates
+{
+    _chocolates=chocolates;
+    self.greetingMessage.text= [NSString stringWithFormat:@"You have %d chocolates.",self.chocolates];
+    [self saveData];
+}
+- (void)viewDidLoad
+{
+    NSLog(@"viewDidLoad");
+
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+    [self loadData];
+}
+
+-(void)saveData
+{
+    [[NSUserDefaults standardUserDefaults]
+     setObject:[NSNumber numberWithInt:self.chocolates] forKey:kChocolates];
+    
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+
+-(void)loadData
+{
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:kChocolates])
+    {
+        self.chocolates = [(NSNumber *)[[NSUserDefaults standardUserDefaults]
+                                   objectForKey:kChocolates] intValue];
+    }
+    else
+    {
+        self.chocolates = 0;
+    }
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

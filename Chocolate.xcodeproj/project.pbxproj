@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD5433921971D79D00379364 /* chocolateShopTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5433911971D79D00379364 /* chocolateShopTableViewController.m */; };
 		FDFB82111970B33000DA25B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDFB82101970B33000DA25B4 /* Foundation.framework */; };
 		FDFB82131970B33000DA25B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDFB82121970B33000DA25B4 /* CoreGraphics.framework */; };
 		FDFB82151970B33000DA25B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDFB82141970B33000DA25B4 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD5433901971D79D00379364 /* chocolateShopTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chocolateShopTableViewController.h; sourceTree = "<group>"; };
+		FD5433911971D79D00379364 /* chocolateShopTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chocolateShopTableViewController.m; sourceTree = "<group>"; };
 		FDFB820D1970B33000DA25B4 /* Chocolate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chocolate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDFB82101970B33000DA25B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FDFB82121970B33000DA25B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -112,13 +115,13 @@
 		FDFB82161970B33000DA25B4 /* Chocolate */ = {
 			isa = PBXGroup;
 			children = (
-				FDFB821F1970B33000DA25B4 /* chocolateAppDelegate.h */,
-				FDFB82201970B33000DA25B4 /* chocolateAppDelegate.m */,
 				FDFB82221970B33000DA25B4 /* Main.storyboard */,
 				FDFB82251970B33000DA25B4 /* chocolateViewController.h */,
 				FDFB82261970B33000DA25B4 /* chocolateViewController.m */,
 				FDFB82281970B33000DA25B4 /* Images.xcassets */,
 				FDFB82171970B33000DA25B4 /* Supporting Files */,
+				FD5433901971D79D00379364 /* chocolateShopTableViewController.h */,
+				FD5433911971D79D00379364 /* chocolateShopTableViewController.m */,
 			);
 			path = Chocolate;
 			sourceTree = "<group>";
@@ -126,6 +129,8 @@
 		FDFB82171970B33000DA25B4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FDFB821F1970B33000DA25B4 /* chocolateAppDelegate.h */,
+				FDFB82201970B33000DA25B4 /* chocolateAppDelegate.m */,
 				FDFB82181970B33000DA25B4 /* Chocolate-Info.plist */,
 				FDFB82191970B33000DA25B4 /* InfoPlist.strings */,
 				FDFB821C1970B33000DA25B4 /* main.m */,
@@ -252,6 +257,7 @@
 			files = (
 				FDFB821D1970B33000DA25B4 /* main.m in Sources */,
 				FDFB82271970B33000DA25B4 /* chocolateViewController.m in Sources */,
+				FD5433921971D79D00379364 /* chocolateShopTableViewController.m in Sources */,
 				FDFB82211970B33000DA25B4 /* chocolateAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +463,7 @@
 				FDFB82411970B33000DA25B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FDFB82421970B33000DA25B4 /* Build configuration list for PBXNativeTarget "ChocolateTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +472,7 @@
 				FDFB82441970B33000DA25B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
